@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://iconsulting.biz/dfm"><graph id="G" edgedefault="directed" toolversion="3.5.0.0" factSchemaId="dab79994-3ca5-4ed2-82ea-cd35189ede67" name="New_Fact" xmlns=""><node><data><Fact Name="New_Fact" Description="" Id="821cb01f-7257-42bf-a9bc-f0d799bd8c9f" X="580" Y="340" Width="180" Height="130"><Measures /><GroupsOfMeasures /></Fact></data></node></graph><additivityMatrix xmlns="" /></graphml>

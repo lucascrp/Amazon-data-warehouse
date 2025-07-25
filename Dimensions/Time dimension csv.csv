@@ -1,0 +1,366 @@
+﻿date;time_of_the_day;week day;weekday_weekend;month;quarter;semester;season;year;peak_shopping_time;promotional_period;order_processing_time;return_period
+01/01/2023;22:01:11;1;Workday;1;First;First;Winter;2023;13:24:15;Winter Sales;10;2
+02/01/2023;22:05:02;2;Workday;1;First;First;Winter;2023;13:40:58;Winter Sales;8;8
+03/01/2023;23:08:08;3;Workday;1;First;First;Winter;2023;12:26:59;Winter Sales;12;1
+04/01/2023;21:03:15;4;Workday;1;First;First;Winter;2023;13:55:29;Winter Sales;3;5
+05/01/2023;03:03:15;5;Workday;1;First;First;Winter;2023;11:42:50;Winter Sales;15;16
+06/01/2023;04:00:31;6;Weekend;1;First;First;Winter;2023;13:16:07;Winter Sales;9;3
+07/01/2023;04:50:45;7;Weekend;1;First;First;Winter;2023;14:28:45;Winter Sales;17;1
+08/01/2023;07:08:37;1;Workday;1;First;First;Winter;2023;13:30:48;Winter Sales;3;14
+09/01/2023;14:38:34;2;Workday;1;First;First;Winter;2023;14:31:00;Winter Sales;18;5
+10/01/2023;21:52:34;3;Workday;1;First;First;Winter;2023;14:01:18;Winter Sales;20;16
+11/01/2023;10:35:14;4;Workday;1;First;First;Winter;2023;11:28:11;Winter Sales;10;19
+12/01/2023;08:43:50;5;Workday;1;First;First;Winter;2023;14:56:22;Winter Sales;20;7
+13/01/2023;11:09:02;6;Weekend;1;First;First;Winter;2023;13:41:54;Winter Sales;14;16
+14/01/2023;12:22:23;7;Weekend;1;First;First;Winter;2023;13:02:41;Winter Sales;1;15
+15/01/2023;18:37:59;1;Workday;1;First;First;Winter;2023;11:00:40;Winter Sales;16;6
+16/01/2023;18:40:52;2;Workday;1;First;First;Winter;2023;12:39:10;Winter Sales;8;17
+17/01/2023;19:51:07;3;Workday;1;First;First;Winter;2023;14:26:02;Winter Sales;18;18
+18/01/2023;02:29:38;4;Workday;1;First;First;Winter;2023;14:44:07;Winter Sales;12;4
+19/01/2023;08:22:14;5;Workday;1;First;First;Winter;2023;12:26:04;Winter Sales;2;8
+20/01/2023;17:31:53;6;Weekend;1;First;First;Winter;2023;13:08:41;Winter Sales;17;15
+21/01/2023;00:09:43;7;Weekend;1;First;First;Winter;2023;13:51:53;Winter Sales;16;17
+22/01/2023;16:28:42;1;Workday;1;First;First;Winter;2023;12:34:10;Winter Sales;2;19
+23/01/2023;20:47:39;2;Workday;1;First;First;Winter;2023;12:49:10;Winter Sales;4;7
+24/01/2023;03:26:20;3;Workday;1;First;First;Winter;2023;12:35:52;Winter Sales;6;6
+25/01/2023;18:51:45;4;Workday;1;First;First;Winter;2023;11:26:25;Winter Sales;9;19
+26/01/2023;02:54:10;5;Workday;1;First;First;Winter;2023;13:41:28;Winter Sales;1;16
+27/01/2023;16:59:03;6;Weekend;1;First;First;Winter;2023;11:02:10;Winter Sales;18;18
+28/01/2023;19:24:22;7;Weekend;1;First;First;Winter;2023;11:01:31;Winter Sales;12;10
+29/01/2023;08:52:40;1;Workday;1;First;First;Winter;2023;12:01:04;Winter Sales;1;1
+30/01/2023;14:19:51;2;Workday;1;First;First;Winter;2023;11:55:28;Winter Sales;17;8
+31/01/2023;22:23:23;3;Workday;1;First;First;Winter;2023;12:46:15;Winter Sales;18;4
+01/02/2023;08:04:27;4;Workday;2;First;First;Winter;2023;12:56:28;None;6;4
+02/02/2023;22:44:45;5;Workday;2;First;First;Winter;2023;13:47:48;None;14;12
+03/02/2023;02:11:18;6;Weekend;2;First;First;Winter;2023;13:50:05;None;9;18
+04/02/2023;04:56:17;7;Weekend;2;First;First;Winter;2023;13:01:38;None;19;16
+05/02/2023;13:56:27;1;Workday;2;First;First;Winter;2023;12:22:20;None;13;17
+06/02/2023;10:15:32;2;Workday;2;First;First;Winter;2023;12:04:03;None;9;19
+07/02/2023;13:35:33;3;Workday;2;First;First;Winter;2023;12:38:46;None;13;11
+08/02/2023;18:16:25;4;Workday;2;First;First;Winter;2023;14:44:59;None;16;4
+09/02/2023;15:45:34;5;Workday;2;First;First;Winter;2023;13:53:55;None;9;14
+10/02/2023;23:01:41;6;Weekend;2;First;First;Winter;2023;13:49:43;None;7;3
+11/02/2023;05:06:05;7;Weekend;2;First;First;Winter;2023;12:47:42;None;13;5
+12/02/2023;19:03:44;1;Workday;2;First;First;Winter;2023;14:18:47;None;8;13
+13/02/2023;16:47:04;2;Workday;2;First;First;Winter;2023;11:35:06;None;12;7
+14/02/2023;19:48:21;3;Workday;2;First;First;Winter;2023;14:18:23;None;19;4
+15/02/2023;13:08:21;4;Workday;2;First;First;Winter;2023;11:13:56;None;13;9
+16/02/2023;17:48:59;5;Workday;2;First;First;Winter;2023;14:20:47;None;1;10
+17/02/2023;17:02:19;6;Weekend;2;First;First;Winter;2023;14:05:07;None;2;8
+18/02/2023;23:10:50;7;Weekend;2;First;First;Winter;2023;11:17:18;None;18;20
+19/02/2023;19:25:54;1;Workday;2;First;First;Winter;2023;12:13:27;None;18;10
+20/02/2023;02:26:47;2;Workday;2;First;First;Winter;2023;14:35:02;None;10;10
+21/02/2023;11:40:53;3;Workday;2;First;First;Winter;2023;11:06:57;None;13;5
+22/02/2023;01:25:58;4;Workday;2;First;First;Winter;2023;14:36:34;None;11;5
+23/02/2023;22:15:44;5;Workday;2;First;First;Winter;2023;13:13:09;None;10;1
+24/02/2023;23:02:52;6;Weekend;2;First;First;Winter;2023;12:04:30;None;9;10
+25/02/2023;18:58:23;7;Weekend;2;First;First;Winter;2023;11:01:12;None;7;17
+26/02/2023;05:25:39;1;Workday;2;First;First;Winter;2023;14:01:31;None;20;16
+27/02/2023;19:12:41;2;Workday;2;First;First;Winter;2023;12:47:28;None;9;14
+28/02/2023;09:36:27;3;Workday;2;First;First;Winter;2023;11:14:36;None;1;4
+01/03/2023;03:16:24;4;Workday;3;First;First;Winter;2023;13:03:27;Easter Sales;10;20
+02/03/2023;23:25:21;5;Workday;3;First;First;Winter;2023;14:28:09;Easter Sales;16;14
+03/03/2023;01:52:08;6;Weekend;3;First;First;Winter;2023;13:06:59;Easter Sales;4;15
+04/03/2023;00:47:46;7;Weekend;3;First;First;Winter;2023;11:51:44;Easter Sales;20;8
+05/03/2023;11:04:56;1;Workday;3;First;First;Winter;2023;11:43:04;Easter Sales;13;3
+06/03/2023;11:41:05;2;Workday;3;First;First;Winter;2023;14:46:25;Easter Sales;11;18
+07/03/2023;01:15:18;3;Workday;3;First;First;Winter;2023;14:50:22;Easter Sales;8;11
+08/03/2023;00:47:27;4;Workday;3;First;First;Winter;2023;13:04:25;Easter Sales;17;10
+09/03/2023;17:12:40;5;Workday;3;First;First;Winter;2023;14:08:58;Easter Sales;7;4
+10/03/2023;14:37:07;6;Weekend;3;First;First;Winter;2023;14:21:43;Easter Sales;8;8
+11/03/2023;22:34:07;7;Weekend;3;First;First;Winter;2023;14:15:35;Easter Sales;4;3
+12/03/2023;07:35:25;1;Workday;3;First;First;Winter;2023;13:24:49;Easter Sales;5;13
+13/03/2023;07:05:06;2;Workday;3;First;First;Winter;2023;11:01:59;Easter Sales;6;9
+14/03/2023;20:53:07;3;Workday;3;First;First;Winter;2023;11:39:38;Easter Sales;4;16
+15/03/2023;21:04:33;4;Workday;3;First;First;Winter;2023;11:14:06;Easter Sales;9;17
+16/03/2023;00:54:43;5;Workday;3;First;First;Winter;2023;11:58:14;Easter Sales;11;11
+17/03/2023;01:12:26;6;Weekend;3;First;First;Winter;2023;13:30:59;Easter Sales;13;3
+18/03/2023;06:28:32;7;Weekend;3;First;First;Winter;2023;12:53:43;Easter Sales;17;18
+19/03/2023;11:42:16;1;Workday;3;First;First;Winter;2023;11:55:10;Easter Sales;6;18
+20/03/2023;20:34:14;2;Workday;3;First;First;Winter;2023;13:29:32;Easter Sales;16;6
+21/03/2023;07:35:33;3;Workday;3;First;First;Spring;2023;13:09:09;Easter Sales;2;1
+22/03/2023;06:58:34;4;Workday;3;First;First;Spring;2023;13:30:07;Easter Sales;16;14
+23/03/2023;03:56:23;5;Workday;3;First;First;Spring;2023;12:58:24;Easter Sales;15;12
+24/03/2023;03:50:51;6;Weekend;3;First;First;Spring;2023;11:11:18;Easter Sales;3;10
+25/03/2023;14:10:12;7;Weekend;3;First;First;Spring;2023;11:31:46;Easter Sales;14;18
+26/03/2023;20:34:37;1;Workday;3;First;First;Spring;2023;14:42:25;Easter Sales;12;10
+27/03/2023;02:50:18;2;Workday;3;First;First;Spring;2023;14:35:02;Easter Sales;5;13
+28/03/2023;08:12:18;3;Workday;3;First;First;Spring;2023;11:36:12;Easter Sales;19;13
+29/03/2023;00:15:09;4;Workday;3;First;First;Spring;2023;12:07:51;Easter Sales;3;1
+30/03/2023;14:08:23;5;Workday;3;First;First;Spring;2023;11:09:06;Easter Sales;7;20
+31/03/2023;15:58:38;6;Weekend;3;First;First;Spring;2023;13:10:39;Easter Sales;11;11
+01/04/2023;02:20:36;7;Weekend;4;Second;First;Spring;2023;13:06:25;Easter Sales;13;18
+02/04/2023;02:35:29;1;Workday;4;Second;First;Spring;2023;11:25:52;Easter Sales;20;15
+03/04/2023;08:10:04;2;Workday;4;Second;First;Spring;2023;11:45:06;Easter Sales;17;16
+04/04/2023;01:31:06;3;Workday;4;Second;First;Spring;2023;14:29:59;Easter Sales;3;2
+05/04/2023;21:26:17;4;Workday;4;Second;First;Spring;2023;13:32:41;Easter Sales;7;19
+06/04/2023;19:48:29;5;Workday;4;Second;First;Spring;2023;11:34:17;Easter Sales;7;11
+07/04/2023;13:47:20;6;Weekend;4;Second;First;Spring;2023;13:19:09;Easter Sales;10;12
+08/04/2023;07:33:27;7;Weekend;4;Second;First;Spring;2023;12:45:01;Easter Sales;19;13
+09/04/2023;22:19:01;1;Workday;4;Second;First;Spring;2023;13:44:58;Easter Sales;7;1
+10/04/2023;02:47:46;2;Workday;4;Second;First;Spring;2023;14:38:27;Easter Sales;12;12
+11/04/2023;20:19:16;3;Workday;4;Second;First;Spring;2023;11:20:01;Easter Sales;19;8
+12/04/2023;11:43:12;4;Workday;4;Second;First;Spring;2023;13:54:41;Easter Sales;15;5
+13/04/2023;06:51:57;5;Workday;4;Second;First;Spring;2023;11:42:18;Easter Sales;15;14
+14/04/2023;10:51:47;6;Weekend;4;Second;First;Spring;2023;11:53:35;Easter Sales;3;14
+15/04/2023;08:53:35;7;Weekend;4;Second;First;Spring;2023;12:37:58;Easter Sales;3;15
+16/04/2023;23:20:52;1;Workday;4;Second;First;Spring;2023;11:13:53;Easter Sales;14;8
+17/04/2023;12:33:48;2;Workday;4;Second;First;Spring;2023;13:30:44;Easter Sales;11;7
+18/04/2023;16:33:26;3;Workday;4;Second;First;Spring;2023;14:55:25;Easter Sales;9;19
+19/04/2023;14:42:57;4;Workday;4;Second;First;Spring;2023;13:18:56;Easter Sales;11;16
+20/04/2023;10:23:49;5;Workday;4;Second;First;Spring;2023;12:42:14;Easter Sales;12;5
+21/04/2023;22:22:38;6;Weekend;4;Second;First;Spring;2023;12:00:30;Easter Sales;19;5
+22/04/2023;22:26:06;7;Weekend;4;Second;First;Spring;2023;13:53:06;Easter Sales;6;19
+23/04/2023;10:36:09;1;Workday;4;Second;First;Spring;2023;13:09:02;Easter Sales;14;15
+24/04/2023;14:55:52;2;Workday;4;Second;First;Spring;2023;13:44:19;Easter Sales;15;16
+25/04/2023;12:40:06;3;Workday;4;Second;First;Spring;2023;14:14:44;Easter Sales;2;2
+26/04/2023;03:22:36;4;Workday;4;Second;First;Spring;2023;12:05:43;Easter Sales;12;20
+27/04/2023;21:00:38;5;Workday;4;Second;First;Spring;2023;11:30:28;Easter Sales;18;14
+28/04/2023;05:32:39;6;Weekend;4;Second;First;Spring;2023;12:40:01;Easter Sales;10;15
+29/04/2023;13:52:07;7;Weekend;4;Second;First;Spring;2023;13:47:34;Easter Sales;8;15
+30/04/2023;12:40:49;1;Workday;4;Second;First;Spring;2023;13:15:54;Easter Sales;9;1
+01/05/2023;01:54:26;2;Workday;5;Second;First;Spring;2023;12:25:04;None;18;12
+02/05/2023;15:10:52;3;Workday;5;Second;First;Spring;2023;14:49:29;None;7;12
+03/05/2023;12:42:10;4;Workday;5;Second;First;Spring;2023;14:57:47;None;3;7
+04/05/2023;08:34:52;5;Workday;5;Second;First;Spring;2023;11:19:17;None;15;6
+05/05/2023;21:24:05;6;Weekend;5;Second;First;Spring;2023;13:38:23;None;16;15
+06/05/2023;10:15:43;7;Weekend;5;Second;First;Spring;2023;11:53:19;None;17;5
+07/05/2023;13:34:33;1;Workday;5;Second;First;Spring;2023;14:36:14;None;13;15
+08/05/2023;10:02:05;2;Workday;5;Second;First;Spring;2023;11:37:46;None;3;1
+09/05/2023;15:21:53;3;Workday;5;Second;First;Spring;2023;14:23:05;None;14;8
+10/05/2023;11:16:00;4;Workday;5;Second;First;Spring;2023;14:44:19;None;6;9
+11/05/2023;16:54:07;5;Workday;5;Second;First;Spring;2023;12:51:06;None;11;16
+12/05/2023;00:20:58;6;Weekend;5;Second;First;Spring;2023;14:35:06;None;9;13
+13/05/2023;05:36:29;7;Weekend;5;Second;First;Spring;2023;13:56:29;None;17;9
+14/05/2023;01:44:35;1;Workday;5;Second;First;Spring;2023;11:32:45;None;13;1
+15/05/2023;09:40:46;2;Workday;5;Second;First;Spring;2023;12:51:00;None;15;8
+16/05/2023;13:53:13;3;Workday;5;Second;First;Spring;2023;13:39:18;None;4;9
+17/05/2023;16:24:30;4;Workday;5;Second;First;Spring;2023;12:30:03;None;20;15
+18/05/2023;17:36:59;5;Workday;5;Second;First;Spring;2023;14:43:31;None;1;18
+19/05/2023;10:34:36;6;Weekend;5;Second;First;Spring;2023;13:56:18;None;7;7
+20/05/2023;09:21:04;7;Weekend;5;Second;First;Spring;2023;12:40:46;None;20;15
+21/05/2023;22:53:14;1;Workday;5;Second;First;Spring;2023;12:18:32;None;15;3
+22/05/2023;08:00:26;2;Workday;5;Second;First;Spring;2023;14:43:04;None;12;20
+23/05/2023;00:14:30;3;Workday;5;Second;First;Spring;2023;11:04:50;None;15;12
+24/05/2023;09:43:42;4;Workday;5;Second;First;Spring;2023;12:07:11;None;7;9
+25/05/2023;14:27:48;5;Workday;5;Second;First;Spring;2023;14:57:46;None;19;17
+26/05/2023;09:55:47;6;Weekend;5;Second;First;Spring;2023;13:13:03;None;3;11
+27/05/2023;05:49:47;7;Weekend;5;Second;First;Spring;2023;11:16:40;None;20;17
+28/05/2023;07:20:52;1;Workday;5;Second;First;Spring;2023;11:55:48;None;19;10
+29/05/2023;19:06:28;2;Workday;5;Second;First;Spring;2023;14:59:30;None;16;2
+30/05/2023;22:50:40;3;Workday;5;Second;First;Spring;2023;11:35:59;None;19;5
+31/05/2023;17:54:27;4;Workday;5;Second;First;Spring;2023;11:54:21;None;17;4
+01/06/2023;23:27:53;5;Workday;6;Second;First;Spring;2023;13:56:40;None;9;6
+02/06/2023;04:45:25;6;Weekend;6;Second;First;Spring;2023;13:59:57;None;15;10
+03/06/2023;23:00:27;7;Weekend;6;Second;First;Spring;2023;13:59:24;None;12;14
+04/06/2023;06:44:02;1;Workday;6;Second;First;Spring;2023;13:47:38;None;10;6
+05/06/2023;15:55:39;2;Workday;6;Second;First;Spring;2023;12:57:02;None;11;12
+06/06/2023;01:33:00;3;Workday;6;Second;First;Spring;2023;13:20:27;None;8;5
+07/06/2023;20:53:21;4;Workday;6;Second;First;Spring;2023;12:36:36;None;2;3
+08/06/2023;03:06:18;5;Workday;6;Second;First;Spring;2023;14:23:37;None;14;18
+09/06/2023;03:11:26;6;Weekend;6;Second;First;Spring;2023;14:03:43;None;2;11
+10/06/2023;07:09:59;7;Weekend;6;Second;First;Spring;2023;11:01:06;None;19;10
+11/06/2023;06:26:18;1;Workday;6;Second;First;Spring;2023;12:23:25;None;13;15
+12/06/2023;04:29:49;2;Workday;6;Second;First;Spring;2023;12:20:03;None;20;17
+13/06/2023;13:04:41;3;Workday;6;Second;First;Spring;2023;11:22:50;None;11;1
+14/06/2023;13:28:03;4;Workday;6;Second;First;Spring;2023;12:42:47;None;1;11
+15/06/2023;04:49:49;5;Workday;6;Second;First;Spring;2023;13:29:38;None;17;17
+16/06/2023;09:28:07;6;Weekend;6;Second;First;Spring;2023;14:21:07;None;1;3
+17/06/2023;16:02:13;7;Weekend;6;Second;First;Spring;2023;11:09:47;None;4;15
+18/06/2023;10:33:01;1;Workday;6;Second;First;Spring;2023;12:55:22;None;8;18
+19/06/2023;18:56:01;2;Workday;6;Second;First;Spring;2023;13:19:12;None;7;2
+20/06/2023;02:36:51;3;Workday;6;Second;First;Spring;2023;14:27:48;None;8;14
+21/06/2023;00:17:09;4;Workday;6;Second;First;Summer;2023;14:45:11;None;13;4
+22/06/2023;10:59:14;5;Workday;6;Second;First;Summer;2023;12:21:01;None;15;6
+23/06/2023;01:43:40;6;Weekend;6;Second;First;Summer;2023;11:30:35;None;4;18
+24/06/2023;13:11:58;7;Weekend;6;Second;First;Summer;2023;13:54:31;None;8;11
+25/06/2023;02:11:29;1;Workday;6;Second;First;Summer;2023;12:24:08;None;18;12
+26/06/2023;09:02:25;2;Workday;6;Second;First;Summer;2023;12:48:50;None;12;7
+27/06/2023;18:35:02;3;Workday;6;Second;First;Summer;2023;14:46:16;None;3;20
+28/06/2023;15:53:28;4;Workday;6;Second;First;Summer;2023;14:36:36;None;15;1
+29/06/2023;02:46:55;5;Workday;6;Second;First;Summer;2023;11:22:02;None;3;16
+30/06/2023;09:43:05;6;Weekend;6;Second;First;Summer;2023;12:14:09;None;10;17
+01/07/2023;16:04:31;7;Weekend;7;Third;Second;Summer;2023;12:08:07;None;3;4
+02/07/2023;23:40:30;1;Workday;7;Third;Second;Summer;2023;14:59:31;None;10;2
+03/07/2023;05:55:40;2;Workday;7;Third;Second;Summer;2023;13:43:10;None;4;10
+04/07/2023;03:44:30;3;Workday;7;Third;Second;Summer;2023;14:16:06;None;15;18
+05/07/2023;07:21:37;4;Workday;7;Third;Second;Summer;2023;13:05:38;None;6;8
+06/07/2023;22:11:54;5;Workday;7;Third;Second;Summer;2023;12:56:36;None;20;15
+07/07/2023;12:40:10;6;Weekend;7;Third;Second;Summer;2023;13:47:14;None;20;9
+08/07/2023;14:57:46;7;Weekend;7;Third;Second;Summer;2023;12:24:43;None;2;1
+09/07/2023;20:33:02;1;Workday;7;Third;Second;Summer;2023;11:15:08;None;18;10
+10/07/2023;16:05:47;2;Workday;7;Third;Second;Summer;2023;12:34:28;None;5;16
+11/07/2023;15:53:34;3;Workday;7;Third;Second;Summer;2023;14:45:44;None;4;13
+12/07/2023;22:13:07;4;Workday;7;Third;Second;Summer;2023;12:37:15;None;8;13
+13/07/2023;21:38:49;5;Workday;7;Third;Second;Summer;2023;13:26:44;None;17;1
+14/07/2023;20:40:58;6;Weekend;7;Third;Second;Summer;2023;13:05:51;None;8;11
+15/07/2023;05:36:08;7;Weekend;7;Third;Second;Summer;2023;11:42:25;None;2;11
+16/07/2023;12:09:11;1;Workday;7;Third;Second;Summer;2023;11:52:29;None;7;3
+17/07/2023;20:24:58;2;Workday;7;Third;Second;Summer;2023;14:08:50;None;7;20
+18/07/2023;03:30:13;3;Workday;7;Third;Second;Summer;2023;14:33:48;None;7;8
+19/07/2023;06:24:01;4;Workday;7;Third;Second;Summer;2023;14:30:41;None;14;19
+20/07/2023;04:31:11;5;Workday;7;Third;Second;Summer;2023;14:21:17;None;3;18
+21/07/2023;05:02:27;6;Weekend;7;Third;Second;Summer;2023;13:08:48;None;17;19
+22/07/2023;16:04:16;7;Weekend;7;Third;Second;Summer;2023;11:47:28;None;18;12
+23/07/2023;08:47:13;1;Workday;7;Third;Second;Summer;2023;13:35:10;None;8;8
+24/07/2023;02:11:28;2;Workday;7;Third;Second;Summer;2023;14:10:20;None;8;13
+25/07/2023;02:09:13;3;Workday;7;Third;Second;Summer;2023;11:17:32;None;8;6
+26/07/2023;21:59:34;4;Workday;7;Third;Second;Summer;2023;14:27:44;None;13;20
+27/07/2023;11:01:01;5;Workday;7;Third;Second;Summer;2023;11:07:29;None;16;8
+28/07/2023;03:13:25;6;Weekend;7;Third;Second;Summer;2023;11:04:51;None;2;3
+29/07/2023;21:12:45;7;Weekend;7;Third;Second;Summer;2023;12:59:57;None;4;4
+30/07/2023;04:44:43;1;Workday;7;Third;Second;Summer;2023;11:14:06;None;18;14
+31/07/2023;10:24:25;2;Workday;7;Third;Second;Summer;2023;13:34:54;None;3;20
+01/08/2023;12:55:51;3;Workday;8;Third;Second;Summer;2023;11:34:04;Summer Sales;4;14
+02/08/2023;13:57:29;4;Workday;8;Third;Second;Summer;2023;13:08:31;Summer Sales;13;16
+03/08/2023;20:22:34;5;Workday;8;Third;Second;Summer;2023;11:21:28;Summer Sales;9;7
+04/08/2023;08:49:25;6;Weekend;8;Third;Second;Summer;2023;14:48:35;Summer Sales;18;20
+05/08/2023;08:00:52;7;Weekend;8;Third;Second;Summer;2023;14:53:03;Summer Sales;12;17
+06/08/2023;18:47:26;1;Workday;8;Third;Second;Summer;2023;14:44:03;Summer Sales;18;15
+07/08/2023;09:23:00;2;Workday;8;Third;Second;Summer;2023;11:38:42;Summer Sales;20;13
+08/08/2023;06:40:33;3;Workday;8;Third;Second;Summer;2023;11:09:35;Summer Sales;4;1
+09/08/2023;00:34:52;4;Workday;8;Third;Second;Summer;2023;12:33:32;Summer Sales;19;12
+10/08/2023;13:23:55;5;Workday;8;Third;Second;Summer;2023;11:55:27;Summer Sales;17;20
+11/08/2023;03:36:42;6;Weekend;8;Third;Second;Summer;2023;13:26:20;Summer Sales;7;6
+12/08/2023;03:44:40;7;Weekend;8;Third;Second;Summer;2023;12:43:12;Summer Sales;19;10
+13/08/2023;07:57:50;1;Workday;8;Third;Second;Summer;2023;14:34:27;Summer Sales;11;8
+14/08/2023;06:18:50;2;Workday;8;Third;Second;Summer;2023;11:47:55;Summer Sales;10;20
+15/08/2023;22:30:58;3;Workday;8;Third;Second;Summer;2023;13:42:41;Summer Sales;15;3
+16/08/2023;02:59:27;4;Workday;8;Third;Second;Summer;2023;13:25:25;Summer Sales;5;8
+17/08/2023;00:19:55;5;Workday;8;Third;Second;Summer;2023;12:37:46;Summer Sales;10;17
+18/08/2023;05:42:03;6;Weekend;8;Third;Second;Summer;2023;13:06:20;Summer Sales;6;11
+19/08/2023;23:40:05;7;Weekend;8;Third;Second;Summer;2023;11:54:13;Summer Sales;20;8
+20/08/2023;07:34:45;1;Workday;8;Third;Second;Summer;2023;14:10:17;Summer Sales;10;19
+21/08/2023;09:28:03;2;Workday;8;Third;Second;Summer;2023;12:24:47;Summer Sales;7;6
+22/08/2023;22:38:15;3;Workday;8;Third;Second;Summer;2023;13:17:22;Summer Sales;8;11
+23/08/2023;01:42:27;4;Workday;8;Third;Second;Summer;2023;14:19:02;Summer Sales;20;2
+24/08/2023;20:56:08;5;Workday;8;Third;Second;Summer;2023;13:38:39;Summer Sales;11;5
+25/08/2023;03:40:10;6;Weekend;8;Third;Second;Summer;2023;11:18:58;Summer Sales;19;8
+26/08/2023;22:16:12;7;Weekend;8;Third;Second;Summer;2023;12:25:51;Summer Sales;4;18
+27/08/2023;18:25:00;1;Workday;8;Third;Second;Summer;2023;12:41:10;Summer Sales;9;9
+28/08/2023;17:16:53;2;Workday;8;Third;Second;Summer;2023;11:13:45;Summer Sales;13;3
+29/08/2023;05:53:56;3;Workday;8;Third;Second;Summer;2023;13:17:27;Summer Sales;17;18
+30/08/2023;08:50:30;4;Workday;8;Third;Second;Summer;2023;12:35:39;Summer Sales;13;4
+31/08/2023;14:22:07;5;Workday;8;Third;Second;Summer;2023;14:02:48;Summer Sales;5;17
+01/09/2023;18:28:33;6;Weekend;9;Third;Second;Summer;2023;14:28:28;Summer Sales;16;19
+02/09/2023;03:09:22;7;Weekend;9;Third;Second;Summer;2023;11:14:06;Summer Sales;6;10
+03/09/2023;00:04:14;1;Workday;9;Third;Second;Summer;2023;12:35:09;Summer Sales;4;16
+04/09/2023;19:04:51;2;Workday;9;Third;Second;Summer;2023;14:08:41;Summer Sales;8;15
+05/09/2023;06:03:16;3;Workday;9;Third;Second;Summer;2023;14:36:07;Summer Sales;7;1
+06/09/2023;14:49:12;4;Workday;9;Third;Second;Summer;2023;11:05:35;Summer Sales;5;16
+07/09/2023;12:06:19;5;Workday;9;Third;Second;Summer;2023;12:17:06;Summer Sales;13;7
+08/09/2023;01:41:57;6;Weekend;9;Third;Second;Summer;2023;14:19:04;Summer Sales;5;11
+09/09/2023;15:04:42;7;Weekend;9;Third;Second;Summer;2023;12:50:41;Summer Sales;4;8
+10/09/2023;13:06:54;1;Workday;9;Third;Second;Summer;2023;14:52:49;Summer Sales;3;1
+11/09/2023;01:36:22;2;Workday;9;Third;Second;Summer;2023;13:48:27;Summer Sales;6;12
+12/09/2023;19:28:07;3;Workday;9;Third;Second;Summer;2023;11:14:20;Summer Sales;20;10
+13/09/2023;13:21:51;4;Workday;9;Third;Second;Summer;2023;12:42:46;Summer Sales;9;17
+14/09/2023;17:38:57;5;Workday;9;Third;Second;Summer;2023;11:59:15;Summer Sales;15;19
+15/09/2023;15:35:10;6;Weekend;9;Third;Second;Summer;2023;13:12:33;Summer Sales;10;9
+16/09/2023;10:06:26;7;Weekend;9;Third;Second;Summer;2023;11:55:09;Summer Sales;11;16
+17/09/2023;06:13:34;1;Workday;9;Third;Second;Summer;2023;13:48:23;Summer Sales;19;2
+18/09/2023;17:06:07;2;Workday;9;Third;Second;Summer;2023;13:19:44;Summer Sales;16;10
+19/09/2023;17:52:38;3;Workday;9;Third;Second;Summer;2023;14:51:36;Summer Sales;6;19
+20/09/2023;10:50:06;4;Workday;9;Third;Second;Summer;2023;12:02:07;Summer Sales;12;7
+21/09/2023;09:34:49;5;Workday;9;Third;Second;Summer;2023;13:46:57;Summer Sales;20;13
+22/09/2023;19:52:07;6;Weekend;9;Third;Second;Summer;2023;11:30:40;Summer Sales;2;2
+23/09/2023;09:58:38;7;Weekend;9;Third;Second;Autumn;2023;14:58:26;Summer Sales;20;8
+24/09/2023;18:13:54;1;Workday;9;Third;Second;Autumn;2023;13:09:02;Summer Sales;18;2
+25/09/2023;17:18:07;2;Workday;9;Third;Second;Autumn;2023;13:03:21;Summer Sales;13;20
+26/09/2023;00:09:36;3;Workday;9;Third;Second;Autumn;2023;14:19:57;Summer Sales;17;9
+27/09/2023;12:05:25;4;Workday;9;Third;Second;Autumn;2023;13:46:39;Summer Sales;11;3
+28/09/2023;17:15:47;5;Workday;9;Third;Second;Autumn;2023;12:32:34;Summer Sales;8;3
+29/09/2023;13:53:52;6;Weekend;9;Third;Second;Autumn;2023;14:35:04;Summer Sales;7;2
+30/09/2023;04:25:27;7;Weekend;9;Third;Second;Autumn;2023;11:15:35;Summer Sales;17;6
+01/10/2023;08:51:38;1;Workday;10;Fourth;Second;Autumn;2023;13:47:32;Black Friday;18;4
+02/10/2023;12:16:27;2;Workday;10;Fourth;Second;Autumn;2023;14:31:07;Black Friday;13;5
+03/10/2023;04:08:36;3;Workday;10;Fourth;Second;Autumn;2023;11:03:37;Black Friday;9;14
+04/10/2023;06:23:18;4;Workday;10;Fourth;Second;Autumn;2023;14:46:02;Black Friday;7;16
+05/10/2023;16:54:42;5;Workday;10;Fourth;Second;Autumn;2023;12:34:03;Black Friday;16;14
+06/10/2023;15:27:08;6;Weekend;10;Fourth;Second;Autumn;2023;11:24:28;Black Friday;11;19
+07/10/2023;19:36:59;7;Weekend;10;Fourth;Second;Autumn;2023;14:40:06;Black Friday;9;18
+08/10/2023;14:33:09;1;Workday;10;Fourth;Second;Autumn;2023;11:19:45;Black Friday;6;15
+09/10/2023;21:14:46;2;Workday;10;Fourth;Second;Autumn;2023;14:32:38;Black Friday;6;16
+10/10/2023;18:45:59;3;Workday;10;Fourth;Second;Autumn;2023;12:09:57;Black Friday;11;1
+11/10/2023;12:40:30;4;Workday;10;Fourth;Second;Autumn;2023;11:06:50;Black Friday;1;9
+12/10/2023;00:00:20;5;Workday;10;Fourth;Second;Autumn;2023;14:25:19;Black Friday;2;8
+13/10/2023;07:53:35;6;Weekend;10;Fourth;Second;Autumn;2023;13:03:23;Black Friday;19;2
+14/10/2023;03:30:04;7;Weekend;10;Fourth;Second;Autumn;2023;13:47:03;Black Friday;20;3
+15/10/2023;16:13:04;1;Workday;10;Fourth;Second;Autumn;2023;14:41:06;Black Friday;11;10
+16/10/2023;12:27:10;2;Workday;10;Fourth;Second;Autumn;2023;14:54:17;Black Friday;12;7
+17/10/2023;09:58:07;3;Workday;10;Fourth;Second;Autumn;2023;14:27:39;Black Friday;6;14
+18/10/2023;01:56:51;4;Workday;10;Fourth;Second;Autumn;2023;14:53:21;Black Friday;8;11
+19/10/2023;00:32:24;5;Workday;10;Fourth;Second;Autumn;2023;11:12:53;Black Friday;15;15
+20/10/2023;14:03:19;6;Weekend;10;Fourth;Second;Autumn;2023;13:58:13;Black Friday;2;1
+21/10/2023;21:51:24;7;Weekend;10;Fourth;Second;Autumn;2023;13:36:15;Black Friday;16;18
+22/10/2023;11:50:44;1;Workday;10;Fourth;Second;Autumn;2023;12:12:12;Black Friday;13;16
+23/10/2023;01:50:18;2;Workday;10;Fourth;Second;Autumn;2023;13:14:10;Black Friday;9;18
+24/10/2023;10:48:42;3;Workday;10;Fourth;Second;Autumn;2023;11:07:30;Black Friday;16;4
+25/10/2023;15:12:26;4;Workday;10;Fourth;Second;Autumn;2023;12:35:43;Black Friday;16;15
+26/10/2023;07:48:01;5;Workday;10;Fourth;Second;Autumn;2023;13:23:46;Black Friday;7;13
+27/10/2023;21:13:03;6;Weekend;10;Fourth;Second;Autumn;2023;11:03:38;Black Friday;9;18
+28/10/2023;14:14:33;7;Weekend;10;Fourth;Second;Autumn;2023;14:30:25;Black Friday;10;1
+29/10/2023;02:50:18;1;Workday;10;Fourth;Second;Autumn;2023;13:52:20;Black Friday;11;18
+30/10/2023;02:17:15;2;Workday;10;Fourth;Second;Autumn;2023;13:14:34;Black Friday;19;1
+31/10/2023;00:42:56;3;Workday;10;Fourth;Second;Autumn;2023;11:16:07;Black Friday;4;15
+01/11/2023;19:38:24;4;Workday;11;Fourth;Second;Autumn;2023;11:41:18;Christmas;20;6
+02/11/2023;07:09:38;5;Workday;11;Fourth;Second;Autumn;2023;11:29:56;Christmas;14;13
+03/11/2023;07:05:14;6;Weekend;11;Fourth;Second;Autumn;2023;12:38:07;Christmas;18;5
+04/11/2023;02:00:14;7;Weekend;11;Fourth;Second;Autumn;2023;11:07:56;Christmas;17;11
+05/11/2023;04:15:58;1;Workday;11;Fourth;Second;Autumn;2023;12:18:13;Christmas;19;1
+06/11/2023;09:37:04;2;Workday;11;Fourth;Second;Autumn;2023;11:56:47;Christmas;7;8
+07/11/2023;23:07:30;3;Workday;11;Fourth;Second;Autumn;2023;12:38:24;Christmas;15;13
+08/11/2023;02:15:18;4;Workday;11;Fourth;Second;Autumn;2023;13:30:56;Christmas;20;7
+09/11/2023;08:48:20;5;Workday;11;Fourth;Second;Autumn;2023;13:51:57;Christmas;12;6
+10/11/2023;11:15:33;6;Weekend;11;Fourth;Second;Autumn;2023;12:11:16;Christmas;11;17
+11/11/2023;12:49:24;7;Weekend;11;Fourth;Second;Autumn;2023;14:17:17;Christmas;18;8
+12/11/2023;11:42:26;1;Workday;11;Fourth;Second;Autumn;2023;11:50:23;Christmas;16;1
+13/11/2023;07:39:06;2;Workday;11;Fourth;Second;Autumn;2023;13:30:48;Christmas;19;15
+14/11/2023;14:35:35;3;Workday;11;Fourth;Second;Autumn;2023;14:07:31;Christmas;4;18
+15/11/2023;02:39:11;4;Workday;11;Fourth;Second;Autumn;2023;14:58:43;Christmas;17;8
+16/11/2023;04:53:29;5;Workday;11;Fourth;Second;Autumn;2023;11:25:49;Christmas;3;10
+17/11/2023;15:56:34;6;Weekend;11;Fourth;Second;Autumn;2023;12:39:52;Christmas;19;12
+18/11/2023;00:53:15;7;Weekend;11;Fourth;Second;Autumn;2023;14:36:27;Christmas;13;2
+19/11/2023;18:37:02;1;Workday;11;Fourth;Second;Autumn;2023;13:18:21;Christmas;16;19
+20/11/2023;09:48:37;2;Workday;11;Fourth;Second;Autumn;2023;13:52:21;Christmas;2;11
+21/11/2023;22:47:27;3;Workday;11;Fourth;Second;Autumn;2023;12:40:43;Christmas;18;6
+22/11/2023;09:45:18;4;Workday;11;Fourth;Second;Autumn;2023;11:39:39;Christmas;7;4
+23/11/2023;01:32:38;5;Workday;11;Fourth;Second;Autumn;2023;12:44:55;Christmas;14;6
+24/11/2023;13:29:29;6;Weekend;11;Fourth;Second;Autumn;2023;13:01:53;Christmas;6;20
+25/11/2023;23:01:32;7;Weekend;11;Fourth;Second;Autumn;2023;12:51:31;Christmas;3;15
+26/11/2023;16:50:51;1;Workday;11;Fourth;Second;Autumn;2023;13:00:59;Christmas;14;3
+27/11/2023;00:49:38;2;Workday;11;Fourth;Second;Autumn;2023;13:33:46;Christmas;8;10
+28/11/2023;02:29:05;3;Workday;11;Fourth;Second;Autumn;2023;12:17:40;Christmas;8;15
+29/11/2023;22:17:09;4;Workday;11;Fourth;Second;Autumn;2023;12:25:44;Christmas;20;3
+30/11/2023;12:40:03;5;Workday;11;Fourth;Second;Autumn;2023;13:24:34;Christmas;2;7
+01/12/2023;05:07:03;6;Weekend;12;Fourth;Second;Autumn;2023;13:00:37;Christmas;12;1
+02/12/2023;11:31:54;7;Weekend;12;Fourth;Second;Autumn;2023;11:01:02;Christmas;5;5
+03/12/2023;14:47:21;1;Workday;12;Fourth;Second;Autumn;2023;14:21:01;Christmas;17;7
+04/12/2023;00:45:23;2;Workday;12;Fourth;Second;Autumn;2023;12:37:12;Christmas;15;12
+05/12/2023;18:09:44;3;Workday;12;Fourth;Second;Autumn;2023;14:46:59;Christmas;11;5
+06/12/2023;09:39:32;4;Workday;12;Fourth;Second;Autumn;2023;14:33:34;Christmas;11;18
+07/12/2023;20:52:09;5;Workday;12;Fourth;Second;Autumn;2023;13:36:26;Christmas;16;13
+08/12/2023;22:55:17;6;Weekend;12;Fourth;Second;Autumn;2023;14:06:56;Christmas;9;8
+09/12/2023;14:43:37;7;Weekend;12;Fourth;Second;Autumn;2023;14:20:50;Christmas;7;13
+10/12/2023;08:13:03;1;Workday;12;Fourth;Second;Autumn;2023;12:40:30;Christmas;3;11
+11/12/2023;06:19:42;2;Workday;12;Fourth;Second;Autumn;2023;13:06:42;Christmas;18;2
+12/12/2023;07:49:19;3;Workday;12;Fourth;Second;Autumn;2023;14:20:13;Christmas;2;13
+13/12/2023;19:12:45;4;Workday;12;Fourth;Second;Autumn;2023;14:03:47;Christmas;4;6
+14/12/2023;14:50:48;5;Workday;12;Fourth;Second;Autumn;2023;14:21:32;Christmas;16;19
+15/12/2023;22:33:45;6;Weekend;12;Fourth;Second;Autumn;2023;12:35:54;Christmas;15;11
+16/12/2023;03:00:04;7;Weekend;12;Fourth;Second;Autumn;2023;14:02:35;Christmas;10;7
+17/12/2023;10:13:00;1;Workday;12;Fourth;Second;Autumn;2023;13:45:52;Christmas;11;13
+18/12/2023;11:14:54;2;Workday;12;Fourth;Second;Autumn;2023;13:50:19;Christmas;2;12
+19/12/2023;10:20:45;3;Workday;12;Fourth;Second;Autumn;2023;12:53:35;Christmas;14;11
+20/12/2023;01:45:02;4;Workday;12;Fourth;Second;Autumn;2023;11:23:23;Christmas;11;17
+21/12/2023;23:46:56;5;Workday;12;Fourth;Second;Autumn;2023;13:07:35;Christmas;10;15
+22/12/2023;21:01:42;6;Weekend;12;Fourth;Second;Winter;2023;14:40:58;Christmas;19;14
+23/12/2023;14:55:19;7;Weekend;12;Fourth;Second;Winter;2023;13:08:14;Christmas;15;9
+24/12/2023;13:17:38;1;Workday;12;Fourth;Second;Winter;2023;12:44:39;Christmas;20;16
+25/12/2023;15:53:27;2;Workday;12;Fourth;Second;Winter;2023;14:54:08;Christmas;6;16
+26/12/2023;05:32:01;3;Workday;12;Fourth;Second;Winter;2023;11:20:27;Christmas;3;13
+27/12/2023;20:15:42;4;Workday;12;Fourth;Second;Winter;2023;12:57:01;Christmas;5;5
+28/12/2023;09:16:01;5;Workday;12;Fourth;Second;Winter;2023;14:05:49;Christmas;3;19
+29/12/2023;10:57:05;6;Weekend;12;Fourth;Second;Winter;2023;12:00:54;Christmas;20;4
+30/12/2023;19:32:47;7;Weekend;12;Fourth;Second;Winter;2023;13:56:13;Christmas;18;20
+31/12/2023;06:26:47;1;Workday;12;Fourth;Second;Winter;2023;13:14:21;Christmas;1;3

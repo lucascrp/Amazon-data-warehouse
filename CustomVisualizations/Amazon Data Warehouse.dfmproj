@@ -1,0 +1,36 @@
+<project name="Amazon Data Warehouse" id="ed79c3ab-7493-4e7a-99c0-333a268378b0" toolversion="3.5.0.0">
+  <datawarehouse>
+    <datamarts>
+      <datamart name="Datamart" id="2bdc9fc5-2873-410c-ba8d-21a1f9285b2c">
+        <factschemas>
+          <factschema id="8448e5bd-431b-4a58-b8d0-df97150d82e4" />
+        </factschemas>
+      </datamart>
+    </datamarts>
+  </datawarehouse>
+  <conformedHierarchies>
+    <conformedHierarchy id="d0115a4d-1f63-4c52-94dd-5ba1a48f7581" />
+    <conformedHierarchy id="91b3df28-96db-4273-8bb5-2a1e5ecb8f90" />
+    <conformedHierarchy id="9797da4e-f824-49b1-a692-d8c154a3c975" />
+    <conformedHierarchy id="74343f20-ef0b-4ed1-850c-4a7f489bb7c9" />
+  </conformedHierarchies>
+  <areas />
+  <customProperties>
+    <attributes />
+    <measures />
+    <facts />
+  </customProperties>
+  <linkedProperties />
+  <projectOptions>
+    <logicModelingProfile name="starschema" isEditable="false" />
+    <logicModelingNamePrefixes DimensionTableNamePrefix="DT_" FactTableNamePrefix="FT_" BridgeTableNamePrefix="BT_" NavigationTableNamePrefix="NAV_" JunkTableNamePrefix="JT_" PrimaryKeyNamePrefix="PK_" ForeignKeyNamePrefix="FK_" TableIdNamePrefix="ID_" ConformedDimensionViewNamePrefix="DTV_" TemporalScenarioRollbackFromFieldName="FROM" TemporalScenarioRollbackToFieldName="TO" TemporalScenarioRollbackMasterFieldName="MASTER" />
+    <logicalModelingDefaultTypes>
+      <attributes name="VARCHAR" length="255" scale="-1" precision="-1" />
+      <measures name="DECIMAL" length="-1" scale="3" precision="18" />
+      <surrogates name="INT" length="-1" scale="-1" precision="-1" />
+      <temporalScenarioRollbackFromType name="DATE" length="-1" scale="-1" precision="-1" />
+      <temporalScenarioRollbackToType name="DATE" length="-1" scale="-1" precision="-1" />
+      <temporalScenarioRollbackMasterType name="INT" length="-1" scale="-1" precision="-1" />
+    </logicalModelingDefaultTypes>
+  </projectOptions>
+</project>
