@@ -48,27 +48,27 @@ Questa repository implementa un moderno processo ETL per un data warehouse Amazo
 
 ---
 
-## Struttura della repo
+## Repository Structure
 
 ```
-├── etl/                # Script ETL PySpark (ingest, transform, write)
-├── conf/               # Configurazioni YAML (schema, mapping, parametri)
-├── docker/             # Dockerfile per ambiente Spark pronto
-├── tests/              # Test unitari PySpark
-├── Dimensions/         # CSV di esempio (dimensioni, fatti)
-├── requirements.txt    # Dipendenze Python
-├── README.md           # Questa documentazione
+├── etl/                # PySpark ETL scripts (ingest, transform, write)
+├── conf/               # YAML configurations (schema, mapping, parameters)
+├── docker/             # Dockerfile for Spark-ready environment
+├── tests/              # PySpark unit tests
+├── Dimensions/         # Sample CSVs (dimensions, facts)
+├── requirements.txt    # Python dependencies
+├── README.md           # This documentation
 ```
 
 ---
 
-## Come eseguire (localmente)
+## How to Run (Locally)
 
-1. **Installa le dipendenze**
+1. **Install dependencies**
   ```bash
   pip install -r requirements.txt
   ```
-2. **Esegui pipeline ETL**
+2. **Run ETL pipeline**
   ```bash
   spark-submit etl/ingest.py
   spark-submit etl/transform.py
@@ -77,31 +77,31 @@ Questa repository implementa un moderno processo ETL per un data warehouse Amazo
 
 ---
 
-## Esecuzione in Docker
+## Run in Docker
 
-1. **Build dell’immagine**
+1. **Build the image**
   ```bash
   docker build -t amazon-dw-etl -f docker/Dockerfile .
   ```
-2. **Avvia il container**
+2. **Start the container**
   ```bash
   docker run -it --rm -v "$PWD":/app amazon-dw-etl
-  # Poi lancia gli script come sopra
+  # Then run the scripts as above
   ```
 
 ---
 
-## Esempio dati e schema
-- Dimensioni: Product, Location, Supplier, Time
-- Fatti: Inventory-Fact
-- Configurazioni e mapping in `conf/`
+## Example Data & Schema
+- Dimensions: Product, Location, Supplier, Time
+- Facts: Inventory-Fact
+- Configurations and mapping in `conf/`
 
 ---
 
-## Test
+## Tests
 
-- Test unitari in `tests/` (pytest + chispa)
-- Esegui:
+- Unit tests in `tests/` (pytest + chispa)
+- Run:
   ```bash
   pytest tests/
   ```
@@ -110,9 +110,9 @@ Questa repository implementa un moderno processo ETL per un data warehouse Amazo
 
 ## Portfolio & Credits
 
-- Progetto parte del mio portfolio: [lucascrp.github.io](https://lucascrp.github.io/)
+- Project featured in my portfolio: [lucascrp.github.io](https://lucascrp.github.io/)
 - Repo: [github.com/lucascrp/Amazon-data-warehouse](https://github.com/lucascrp/Amazon-data-warehouse)
-- Autore: [Luca Scarpelli](https://github.com/lucascrp)
+- Author: [Luca Scarpelli](https://github.com/lucascrp)
 
 ---
 
