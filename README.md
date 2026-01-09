@@ -39,12 +39,13 @@ This repository showcases the complete design, implementation, and presentation 
 
 ---
 
-## Descrizione
-Questa repository implementa un moderno processo ETL per un data warehouse Amazon-like, usando Apache Spark e PySpark. Include pipeline di ingestione, pulizia, trasformazione e scrittura dati in formato columnar (Parquet/Delta), orchestrazione e test.
 
-- **Fonte dati**: CSV di dimensioni e fatti (simulazione Amazon/Contoso)
-- **Tecnologie**: PySpark, Docker, YAML config, test PySpark
-- **Obiettivo**: Pipeline riproducibile, scalabile, pronta per analisi avanzate e BI
+## Description
+This repository implements a modern ETL process for an Amazon-like data warehouse using Apache Spark and PySpark. It includes pipelines for ingestion, cleaning, transformation, and writing data in columnar format (Parquet/Delta), orchestration, and testing.
+
+- **Data source**: CSVs for dimensions and facts (Amazon/Contoso simulation)
+- **Technologies**: PySpark, Docker, YAML config, PySpark testing
+- **Goal**: Reproducible, scalable pipeline ready for advanced analytics and BI
 
 ---
 
