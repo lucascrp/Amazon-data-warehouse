@@ -1,0 +1,423 @@
+# Amazon Data Warehouse - Schema Mappings
+# ========================================
+# Maps source columns to target columns with transformations
+
+# Inventory Fact Table Mappings
+inventory_fact:
+  source_file: "Dimensions/Inventory-Fact.csv"
+  target_table: "fact_inventory"
+  target_path: "data/processed/facts/inventory"
+  
+  column_mappings:
+    - source: "InventoryID"
+      target: "inventory_id"
+      type: "string"
+      transform: null
+      
+    - source: "DateID"
+      target: "date_id"
+      type: "date"
+      transform: "parse_date"
+      format: "M/d/yyyy"
+      
+    - source: "ProductID"
+      target: "product_id"
+      type: "string"
+      transform: null
+      
+    - source: "SupplierID"
+      target: "supplier_id"
+      type: "string"
+      transform: null
+      
+    - source: "WarehouseID"
+      target: "warehouse_id"
+      type: "string"
+      transform: null
+      
+    - source: "Quantity_on_hand"
+      target: "quantity_on_hand"
+      type: "integer"
+      transform: "cast_int"
+      
+    - source: "Stock_Movement"
+      target: "stock_movement"
+      type: "integer"
+      transform: "cast_int"
+
+  # Derived columns
+  derived_columns:
+    - name: "year"
+      expression: "year(date_id)"
+      type: "integer"
+      
+    - name: "month"
+      expression: "month(date_id)"
+      type: "integer"
+      
+    - name: "quarter"
+      expression: "quarter(date_id)"
+      type: "integer"
+      
+    - name: "day_of_week"
+      expression: "dayofweek(date_id)"
+      type: "integer"
+      
+    - name: "is_stock_decrease"
+      expression: "stock_movement < 0"
+      type: "boolean"
+      
+    - name: "inventory_value"
+      expression: "quantity_on_hand * unit_price"
+      type: "decimal"
+      requires_join: "product_dimension"
+
+# Product Dimension Mappings
+product_dimension:
+  source_file: "Dimensions/Product-dimension.csv"
+  target_table: "dim_product"
+  target_path: "data/processed/dimensions/product"
+  
+  column_mappings:
+    - source: "productID"
+      target: "product_id"
+      type: "string"
+      
+    - source: "category"
+      target: "category"
+      type: "string"
+      transform: "trim_upper"
+      
+    - source: "product_name"
+      target: "product_name"
+      type: "string"
+      transform: "trim"
+      
+    - source: "product_description"
+      target: "product_description"
+      type: "string"
+      
+    - source: "Unit_price"
+      target: "unit_price"
+      type: "decimal"
+      precision: 10
+      scale: 2
+      
+    - source: "Manufacturer"
+      target: "manufacturer"
+      type: "string"
+      
+    - source: "weight"
+      target: "weight_kg"
+      type: "decimal"
+      
+    - source: "size"
+      target: "size_cm"
+      type: "decimal"
+      
+    - source: "supplier_sku"
+      target: "supplier_sku"
+      type: "string"
+      
+    - source: "customer_rating"
+      target: "customer_rating"
+      type: "decimal"
+      
+    - source: "sales_rank"
+      target: "sales_rank"
+      type: "decimal"
+
+  # Derived columns
+  derived_columns:
+    - name: "price_category"
+      expression: |
+        CASE 
+          WHEN unit_price < 200 THEN 'Budget'
+          WHEN unit_price < 500 THEN 'Mid-Range'
+          WHEN unit_price < 800 THEN 'Premium'
+          ELSE 'Luxury'
+        END
+      type: "string"
+      
+    - name: "rating_category"
+      expression: |
+        CASE 
+          WHEN customer_rating >= 4.0 THEN 'Excellent'
+          WHEN customer_rating >= 3.0 THEN 'Good'
+          WHEN customer_rating >= 2.0 THEN 'Average'
+          ELSE 'Poor'
+        END
+      type: "string"
+
+# Location/Warehouse Dimension Mappings
+location_dimension:
+  source_file: "Dimensions/Location-dimension.csv"
+  target_table: "dim_location"
+  target_path: "data/processed/dimensions/location"
+  
+  column_mappings:
+    - source: "LocationID"
+      target: "location_id"
+      type: "string"
+      
+    - source: "Warehouse"
+      target: "warehouse_name"
+      type: "string"
+      
+    - source: "fulfillment_center"
+      target: "fulfillment_center"
+      type: "string"
+      
+    - source: "Region"
+      target: "region"
+      type: "string"
+      
+    - source: "Country"
+      target: "country"
+      type: "string"
+      
+    - source: "address"
+      target: "address"
+      type: "string"
+      
+    - source: "Storage_capacity"
+      target: "storage_capacity"
+      type: "integer"
+      
+    - source: "Inventory_movement_history"
+      target: "inventory_movement_history"
+      type: "integer"
+      
+    - source: "peak_season_storage"
+      target: "peak_season_storage"
+      type: "integer"
+
+  # Derived columns
+  derived_columns:
+    - name: "warehouse_code"
+      expression: "split(warehouse_name, ' - ')[0]"
+      type: "string"
+      
+    - name: "continent"
+      expression: |
+        CASE 
+          WHEN country IN ('France', 'Germany', 'Italy', 'Spain', 'United Kingdom', 'Netherlands', 'Belgium', 'Poland', 'Ireland', 'Luxemburg') THEN 'Europe'
+          WHEN country IN ('United States of America', 'Canada', 'Mexico') THEN 'North America'
+          WHEN country IN ('Brasil', 'Argentina', 'Columbia') THEN 'South America'
+          WHEN country IN ('China', 'Hong Kong', 'Australia') THEN 'Asia-Pacific'
+          WHEN country IN ('Egypt') THEN 'Africa'
+          ELSE 'Other'
+        END
+      type: "string"
+      
+    - name: "capacity_tier"
+      expression: |
+        CASE 
+          WHEN storage_capacity >= 8000 THEN 'Large'
+          WHEN storage_capacity >= 5000 THEN 'Medium'
+          ELSE 'Small'
+        END
+      type: "string"
+
+# Supplier Dimension Mappings
+supplier_dimension:
+  source_file: "Dimensions/Supplier-dimension.csv"
+  target_table: "dim_supplier"
+  target_path: "data/processed/dimensions/supplier"
+  
+  column_mappings:
+    - source: "SupplierID"
+      target: "supplier_id"
+      type: "string"
+      
+    - source: "SupplierName"
+      target: "supplier_name"
+      type: "string"
+      
+    - source: "Lead_time"
+      target: "lead_time_days"
+      type: "integer"
+      
+    - source: "Dropshipping_capability"
+      target: "dropshipping_capability"
+      type: "integer"
+      
+    - source: "quality_control_rank"
+      target: "quality_control_rank"
+      type: "integer"
+      
+    - source: "Lead_time_variabilty"
+      target: "lead_time_variability"
+      type: "integer"
+
+  # Derived columns
+  derived_columns:
+    - name: "supplier_tier"
+      expression: |
+        CASE 
+          WHEN quality_control_rank >= 8 THEN 'Tier 1 - Premium'
+          WHEN quality_control_rank >= 5 THEN 'Tier 2 - Standard'
+          ELSE 'Tier 3 - Basic'
+        END
+      type: "string"
+      
+    - name: "lead_time_category"
+      expression: |
+        CASE 
+          WHEN lead_time_days <= 3 THEN 'Fast'
+          WHEN lead_time_days <= 7 THEN 'Standard'
+          ELSE 'Slow'
+        END
+      type: "string"
+      
+    - name: "reliability_score"
+      expression: "(10 - lead_time_variability) * quality_control_rank / 10"
+      type: "decimal"
+
+# Time Dimension Mappings
+time_dimension:
+  source_file: "Dimensions/Time-dimension.csv"
+  target_table: "dim_time"
+  target_path: "data/processed/dimensions/time"
+  
+  column_mappings:
+    - source: "date"
+      target: "date_key"
+      type: "date"
+      transform: "parse_date"
+      format: "M/d/yyyy"
+      
+    - source: "time_of_the_day"
+      target: "time_of_day"
+      type: "string"
+      
+    - source: "week day"
+      target: "day_of_week"
+      type: "integer"
+      
+    - source: "weekday_weekend"
+      target: "weekday_weekend"
+      type: "string"
+      
+    - source: "month"
+      target: "month_num"
+      type: "integer"
+      
+    - source: "quarter"
+      target: "quarter_name"
+      type: "string"
+      
+    - source: "semester"
+      target: "semester"
+      type: "string"
+      
+    - source: "season"
+      target: "season"
+      type: "string"
+      
+    - source: "year"
+      target: "year"
+      type: "integer"
+      
+    - source: "peak_shopping_time"
+      target: "peak_shopping_time"
+      type: "string"
+      
+    - source: "promotional_period"
+      target: "promotional_period"
+      type: "string"
+      
+    - source: "order_processing_time"
+      target: "order_processing_time"
+      type: "integer"
+      
+    - source: "return_period"
+      target: "return_period"
+      type: "integer"
+
+  # Derived columns
+  derived_columns:
+    - name: "date_id"
+      expression: "date_format(date_key, 'yyyyMMdd')"
+      type: "string"
+      
+    - name: "month_name"
+      expression: "date_format(date_key, 'MMMM')"
+      type: "string"
+      
+    - name: "day_name"
+      expression: "date_format(date_key, 'EEEE')"
+      type: "string"
+      
+    - name: "is_weekend"
+      expression: "weekday_weekend = 'Weekend'"
+      type: "boolean"
+      
+    - name: "quarter_num"
+      expression: |
+        CASE quarter_name
+          WHEN 'First' THEN 1
+          WHEN 'Second' THEN 2
+          WHEN 'Third' THEN 3
+          WHEN 'Fourth' THEN 4
+        END
+      type: "integer"
+      
+    - name: "fiscal_year"
+      expression: "year"
+      type: "integer"
+
+# Aggregate Table Definitions
+aggregates:
+  # Daily inventory summary
+  daily_inventory_summary:
+    source: "fact_inventory"
+    target_path: "data/analytics/aggregates/daily_inventory"
+    group_by:
+      - "date_id"
+      - "warehouse_id"
+    metrics:
+      - name: "total_quantity"
+        expression: "sum(quantity_on_hand)"
+      - name: "total_movement"
+        expression: "sum(stock_movement)"
+      - name: "avg_quantity"
+        expression: "avg(quantity_on_hand)"
+      - name: "product_count"
+        expression: "count(distinct product_id)"
+        
+  # Product performance
+  product_performance:
+    source: "fact_inventory"
+    target_path: "data/analytics/aggregates/product_performance"
+    group_by:
+      - "product_id"
+      - "month"
+      - "year"
+    metrics:
+      - name: "avg_stock_level"
+        expression: "avg(quantity_on_hand)"
+      - name: "total_movement"
+        expression: "sum(stock_movement)"
+      - name: "warehouse_presence"
+        expression: "count(distinct warehouse_id)"
+        
+  # Regional summary
+  regional_summary:
+    source: "fact_inventory"
+    target_path: "data/analytics/aggregates/regional_summary"
+    join:
+      - table: "dim_location"
+        on: "warehouse_id = location_id"
+    group_by:
+      - "continent"
+      - "country"
+      - "quarter"
+      - "year"
+    metrics:
+      - name: "total_inventory"
+        expression: "sum(quantity_on_hand)"
+      - name: "total_movement"
+        expression: "sum(stock_movement)"
+      - name: "warehouse_count"
+        expression: "count(distinct warehouse_id)"

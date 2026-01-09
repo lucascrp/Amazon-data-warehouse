@@ -1,3 +1,121 @@
+# Amazon Data Warehouse ETL & Analytics
+
+[![Spark ETL](https://img.shields.io/badge/Spark-ETL-orange)](https://spark.apache.org/) [![PySpark](https://img.shields.io/badge/PySpark-3.5.0-blue)](https://pypi.org/project/pyspark/) [![Docker Ready](https://img.shields.io/badge/docker-ready-blue)](https://www.docker.com/) [![Portfolio Project](https://img.shields.io/badge/portfolio-lucascrp.github.io-green)](https://lucascrp.github.io/)
+
+
+> **Progetto d’esame: Data Warehouse moderno con ETL Spark**
+
+---
+
+## Presentazione del progetto
+
+Questa repository mostra il lavoro completo di progettazione, implementazione e presentazione di un Data Warehouse, come richiesto in un esame universitario. Il progetto unisce:
+
+- **Modellazione dimensionale**: tabelle di fatto e dimensione, schema documentato e dati di esempio
+- **ETL moderno**: pipeline automatizzata con Apache Spark (PySpark), configurabile e riproducibile
+- **Visualizzazione**: dashboard interattiva Python (Streamlit) e file Power BI come esempio
+- **Riproducibilità**: ambiente Docker, requirements, istruzioni dettagliate
+
+### Cosa dimostra questa repo
+- Capacità di progettare un data warehouse reale
+- Competenze pratiche su Spark, Python, YAML, Docker
+- Automazione del processo ETL e validazione dati
+- Presentazione efficace dei risultati (dashboard, visual)
+- Documentazione e chiarezza espositiva
+
+---
+
+## Come valutare il progetto
+
+1. **Analizza la struttura dati**: vedi cartella `Dimensions/` e file di schema in `conf/`
+2. **Guarda il codice ETL**: pipeline Spark in `etl/` (ingestione, trasformazione, scrittura)
+3. **Prova la dashboard**: lancia `streamlit run etl/dashboard.py` per vedere i risultati
+4. **Consulta la documentazione**: questo README, commenti nei file, mapping YAML
+5. **(Opzionale) Esplora la visual Power BI**: file .pbit incluso come esempio
+
+---
+
+---
+
+## Descrizione
+Questa repository implementa un moderno processo ETL per un data warehouse Amazon-like, usando Apache Spark e PySpark. Include pipeline di ingestione, pulizia, trasformazione e scrittura dati in formato columnar (Parquet/Delta), orchestrazione e test.
+
+- **Fonte dati**: CSV di dimensioni e fatti (simulazione Amazon/Contoso)
+- **Tecnologie**: PySpark, Docker, YAML config, test PySpark
+- **Obiettivo**: Pipeline riproducibile, scalabile, pronta per analisi avanzate e BI
+
+---
+
+## Struttura della repo
+
+```
+├── etl/                # Script ETL PySpark (ingest, transform, write)
+├── conf/               # Configurazioni YAML (schema, mapping, parametri)
+├── docker/             # Dockerfile per ambiente Spark pronto
+├── tests/              # Test unitari PySpark
+├── Dimensions/         # CSV di esempio (dimensioni, fatti)
+├── requirements.txt    # Dipendenze Python
+├── README.md           # Questa documentazione
+```
+
+---
+
+## Come eseguire (localmente)
+
+1. **Installa le dipendenze**
+  ```bash
+  pip install -r requirements.txt
+  ```
+2. **Esegui pipeline ETL**
+  ```bash
+  spark-submit etl/ingest.py
+  spark-submit etl/transform.py
+  spark-submit etl/write.py
+  ```
+
+---
+
+## Esecuzione in Docker
+
+1. **Build dell’immagine**
+  ```bash
+  docker build -t amazon-dw-etl -f docker/Dockerfile .
+  ```
+2. **Avvia il container**
+  ```bash
+  docker run -it --rm -v "$PWD":/app amazon-dw-etl
+  # Poi lancia gli script come sopra
+  ```
+
+---
+
+## Esempio dati e schema
+- Dimensioni: Product, Location, Supplier, Time
+- Fatti: Inventory-Fact
+- Configurazioni e mapping in `conf/`
+
+---
+
+## Test
+
+- Test unitari in `tests/` (pytest + chispa)
+- Esegui:
+  ```bash
+  pytest tests/
+  ```
+
+---
+
+## Portfolio & Credits
+
+- Progetto parte del mio portfolio: [lucascrp.github.io](https://lucascrp.github.io/)
+- Repo: [github.com/lucascrp/Amazon-data-warehouse](https://github.com/lucascrp/Amazon-data-warehouse)
+- Autore: [Luca Scarpelli](https://github.com/lucascrp)
+
+---
+
+## License
+MIT
 # 📦 Data Warehouse Project – Amazon Inventory Management Use Case
 
 ## 🧭 Project Overview

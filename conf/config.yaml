@@ -1,0 +1,251 @@
+# Amazon Data Warehouse - ETL Configuration
+# ==========================================
+
+# Application Settings
+app:
+  name: "Amazon-Data-Warehouse-ETL"
+  version: "1.0.0"
+  log_level: "INFO"
+
+# Spark Configuration
+spark:
+  master: "local[*]"
+  app_name: "AmazonDW-ETL"
+  config:
+    spark.sql.shuffle.partitions: 8
+    spark.driver.memory: "4g"
+    spark.executor.memory: "4g"
+    spark.sql.adaptive.enabled: true
+    spark.sql.adaptive.coalescePartitions.enabled: true
+    spark.serializer: "org.apache.spark.serializer.KryoSerializer"
+    # Delta Lake settings (if using delta format)
+    spark.sql.extensions: "io.delta.sql.DeltaSparkSessionExtension"
+    spark.sql.catalog.spark_catalog: "org.apache.spark.sql.delta.catalog.DeltaCatalog"
+
+# Data Paths
+paths:
+  # Source data (raw CSV files)
+  raw:
+    base: "data/raw"
+    dimensions: "Dimensions"
+    inventory_fact: "Dimensions/Inventory-Fact.csv"
+    product_dim: "Dimensions/Product-dimension.csv"
+    location_dim: "Dimensions/Location-dimension.csv"
+    supplier_dim: "Dimensions/Supplier-dimension.csv"
+    time_dim: "Dimensions/Time-dimension.csv"
+  
+  # Staging area
+  staging:
+    base: "data/staging"
+  
+  # Processed data (Parquet/Delta)
+  processed:
+    base: "data/processed"
+    format: "parquet"  # or "delta" for Delta Lake
+    dimensions: "data/processed/dimensions"
+    facts: "data/processed/facts"
+  
+  # Analytics/Cubes
+  analytics:
+    base: "data/analytics"
+    cubes: "data/analytics/cubes"
+    aggregates: "data/analytics/aggregates"
+
+# Schema Definitions
+schemas:
+  inventory_fact:
+    columns:
+      - name: "InventoryID"
+        type: "string"
+        nullable: false
+        description: "Unique identifier for inventory record"
+      - name: "DateID"
+        type: "string"
+        nullable: false
+        description: "Date reference"
+      - name: "ProductID"
+        type: "string"
+        nullable: false
+        description: "Foreign key to Product dimension"
+      - name: "SupplierID"
+        type: "string"
+        nullable: false
+        description: "Foreign key to Supplier dimension"
+      - name: "WarehouseID"
+        type: "string"
+        nullable: false
+        description: "Foreign key to Location dimension"
+      - name: "Quantity_on_hand"
+        type: "integer"
+        nullable: false
+        description: "Current stock quantity"
+      - name: "Stock_Movement"
+        type: "integer"
+        nullable: false
+        description: "Stock movement (positive or negative)"
+    
+  product_dimension:
+    columns:
+      - name: "productID"
+        type: "string"
+        nullable: false
+      - name: "category"
+        type: "string"
+        nullable: true
+      - name: "product_name"
+        type: "string"
+        nullable: false
+      - name: "product_description"
+        type: "string"
+        nullable: true
+      - name: "Unit_price"
+        type: "decimal(10,2)"
+        nullable: false
+      - name: "Manufacturer"
+        type: "string"
+        nullable: true
+      - name: "weight"
+        type: "decimal(10,2)"
+        nullable: true
+      - name: "size"
+        type: "decimal(10,2)"
+        nullable: true
+      - name: "supplier_sku"
+        type: "string"
+        nullable: true
+      - name: "customer_rating"
+        type: "decimal(3,2)"
+        nullable: true
+      - name: "sales_rank"
+        type: "decimal(5,2)"
+        nullable: true
+
+  location_dimension:
+    columns:
+      - name: "LocationID"
+        type: "string"
+        nullable: false
+      - name: "Warehouse"
+        type: "string"
+        nullable: false
+      - name: "fulfillment_center"
+        type: "string"
+        nullable: true
+      - name: "Region"
+        type: "string"
+        nullable: true
+      - name: "Country"
+        type: "string"
+        nullable: false
+      - name: "address"
+        type: "string"
+        nullable: true
+      - name: "Storage_capacity"
+        type: "integer"
+        nullable: true
+      - name: "Inventory_movement_history"
+        type: "integer"
+        nullable: true
+      - name: "peak_season_storage"
+        type: "integer"
+        nullable: true
+
+  supplier_dimension:
+    columns:
+      - name: "SupplierID"
+        type: "string"
+        nullable: false
+      - name: "SupplierName"
+        type: "string"
+        nullable: false
+      - name: "Lead_time"
+        type: "integer"
+        nullable: true
+      - name: "Dropshipping_capability"
+        type: "integer"
+        nullable: true
+      - name: "quality_control_rank"
+        type: "integer"
+        nullable: true
+      - name: "Lead_time_variabilty"
+        type: "integer"
+        nullable: true
+
+  time_dimension:
+    columns:
+      - name: "date"
+        type: "string"
+        nullable: false
+      - name: "time_of_the_day"
+        type: "string"
+        nullable: true
+      - name: "week_day"
+        type: "integer"
+        nullable: true
+      - name: "weekday_weekend"
+        type: "string"
+        nullable: true
+      - name: "month"
+        type: "integer"
+        nullable: true
+      - name: "quarter"
+        type: "string"
+        nullable: true
+      - name: "semester"
+        type: "string"
+        nullable: true
+      - name: "season"
+        type: "string"
+        nullable: true
+      - name: "year"
+        type: "integer"
+        nullable: true
+      - name: "peak_shopping_time"
+        type: "string"
+        nullable: true
+      - name: "promotional_period"
+        type: "string"
+        nullable: true
+      - name: "order_processing_time"
+        type: "integer"
+        nullable: true
+      - name: "return_period"
+        type: "integer"
+        nullable: true
+
+# ETL Job Settings
+etl:
+  batch_size: 10000
+  enable_checkpointing: true
+  checkpoint_dir: "data/checkpoints"
+  
+  # Partitioning strategy
+  partitioning:
+    inventory_fact:
+      - "year"
+      - "month"
+    
+  # Data quality rules
+  quality_rules:
+    inventory_fact:
+      - rule: "not_null"
+        columns: ["InventoryID", "DateID", "ProductID"]
+      - rule: "positive"
+        columns: ["Quantity_on_hand"]
+    
+# Database Connection (optional, for loading to RDBMS)
+database:
+  enabled: false
+  type: "postgresql"  # postgresql, mysql, etc.
+  host: "localhost"
+  port: 5432
+  database: "amazon_dw"
+  schema: "public"
+  user: "${DB_USER}"
+  password: "${DB_PASSWORD}"
+  
+# Output Settings
+output:
+  compression: "snappy"  # snappy, gzip, none
+  coalesce_files: true
+  target_file_size_mb: 128
