@@ -3,35 +3,37 @@
 [![Spark ETL](https://img.shields.io/badge/Spark-ETL-orange)](https://spark.apache.org/) [![PySpark](https://img.shields.io/badge/PySpark-3.5.0-blue)](https://pypi.org/project/pyspark/) [![Docker Ready](https://img.shields.io/badge/docker-ready-blue)](https://www.docker.com/) [![Portfolio Project](https://img.shields.io/badge/portfolio-lucascrp.github.io-green)](https://lucascrp.github.io/)
 
 
-> **Progetto d’esame: Data Warehouse moderno con ETL Spark**
+> **Exam Project: Modern Data Warehouse with Spark ETL**
 
 ---
 
-## Presentazione del progetto
 
-Questa repository mostra il lavoro completo di progettazione, implementazione e presentazione di un Data Warehouse, come richiesto in un esame universitario. Il progetto unisce:
+## Project Overview
 
-- **Modellazione dimensionale**: tabelle di fatto e dimensione, schema documentato e dati di esempio
-- **ETL moderno**: pipeline automatizzata con Apache Spark (PySpark), configurabile e riproducibile
-- **Visualizzazione**: dashboard interattiva Python (Streamlit) e file Power BI come esempio
-- **Riproducibilità**: ambiente Docker, requirements, istruzioni dettagliate
+This repository showcases the complete design, implementation, and presentation of a Data Warehouse, as required for a university exam. The project combines:
 
-### Cosa dimostra questa repo
-- Capacità di progettare un data warehouse reale
-- Competenze pratiche su Spark, Python, YAML, Docker
-- Automazione del processo ETL e validazione dati
-- Presentazione efficace dei risultati (dashboard, visual)
-- Documentazione e chiarezza espositiva
+- **Dimensional modeling**: fact and dimension tables, documented schema, and sample data
+- **Modern ETL**: automated pipeline with Apache Spark (PySpark), fully configurable and reproducible
+- **Visualization**: interactive Python dashboard (Streamlit) and Power BI file as an example
+- **Reproducibility**: Docker environment, requirements, and detailed instructions
+
+### What this repo demonstrates
+- Ability to design a real-world data warehouse
+- Practical skills with Spark, Python, YAML, Docker
+- ETL automation and data validation
+- Effective presentation of results (dashboard, visuals)
+- Documentation and clarity
 
 ---
 
-## Come valutare il progetto
 
-1. **Analizza la struttura dati**: vedi cartella `Dimensions/` e file di schema in `conf/`
-2. **Guarda il codice ETL**: pipeline Spark in `etl/` (ingestione, trasformazione, scrittura)
-3. **Prova la dashboard**: lancia `streamlit run etl/dashboard.py` per vedere i risultati
-4. **Consulta la documentazione**: questo README, commenti nei file, mapping YAML
-5. **(Opzionale) Esplora la visual Power BI**: file .pbit incluso come esempio
+## How to evaluate this project
+
+1. **Analyze the data structure**: see the `Dimensions/` folder and schema files in `conf/`
+2. **Review the ETL code**: Spark pipeline in `etl/` (ingestion, transformation, writing)
+3. **Try the dashboard**: run `streamlit run etl/dashboard.py` to see the results
+4. **Check the documentation**: this README, file comments, YAML mapping
+5. **(Optional) Explore the Power BI visual**: .pbit file included as an example
 
 ---
 
